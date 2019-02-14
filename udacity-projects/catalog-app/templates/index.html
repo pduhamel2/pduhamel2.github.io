@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block title %}Home{% endblock %}
+{% block article_container %}
+  <h2>Check Out These Awesome Games!</h2>
+  <ul style="list-style-type:none">
+  {% for game in games %}
+
+  <li><a href = "{{url_for('viewGame', catagory=game.catagory, game=game.name)}}">{{game.name}}</a> ({{game.catagory}})</li>
+  
+  {% endfor %}
+  </ul>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block title %}{{catagory}} Games{% endblock %}
+{% block article_container %}
+  <a class = "alignright" href = "{{url_for('deleteCatagory', catagory=catagory)}}">Delete Genre</a>
+  <a class = "alignright" href = "{{url_for('newGame', catagory=catagory)}}">New Game</a>
+  <h2>{{catagory}} Games</h2>
+  {{ super() }}
+{% endblock %}

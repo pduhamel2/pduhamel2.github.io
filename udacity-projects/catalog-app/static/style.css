@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto;
+}
+
+ /*
+ *
+ * Header
+ *
+ */
+
+header {
+    background-color: #666;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+a#userbutton:link, a#userbutton:visited {
+    background-color: orangered;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;    
+}
+
+a#userbutton:hover, a#userbutton:active {
+    background-color: #ff5100;
+}
+
+ /*
+ *
+ * Section
+ *
+ */
+
+section {
+    margin: 35px;
+    background-color: #f1f1f1;
+}
+
+nav {
+    float: left;
+    width: 15%;
+    background: #ccc;
+    padding: 0px 20px;
+    min-height: 275px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ /*
+ *
+ * Article
+ *
+ */
+
+article {
+    float: left;
+    padding: 0px 20px;
+    width: 85%;
+    min-height: 275px;
+}
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+ /*
+ *
+ * Footer
+ *
+ */
+
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+ /*
+ *
+ * Links
+ *
+ */
+
+a {
+    padding: 10px 5px;
+    display: inline-block;
+}
+
+ /*
+ *
+ * Align
+ *
+ */
+
+.alignright {
+    float: right;
+}
+
+ /*
+ *
+ * Break Points
+ *
+ */
+
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}

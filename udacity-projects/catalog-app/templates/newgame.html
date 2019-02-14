@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block title %}New Game{% endblock %}
+{% block article_container %}
+<h1>Add A New Game</h1>
+  <form action="#" method = "post">
+    <div class="form-group">
+      <p>Game Name:</p>
+      <input type="text" name="name">
+      <br><br>
+      <p>Game Description:</p>
+      <textarea wrap="soft" rows="6" cols="40" name="description"></textarea>
+      <br><br>
+      <p>Game Genre:</p>
+      <select name="genres">
+        {% for catagory in catagories %}
+  
+          {% if catagory.name == currentCatagory %}
+            <option value={{catagory.name}} selected="selected">{{catagory.name}}</option>
+  
+          {% else %}
+  
+            <option value={{catagory.name}}>{{catagory.name}}</option>
+        
+          {% endif %}
+        
+        {% endfor %}
+      </select>
+      <br><br> 
+      <input type="submit" value="Submit">
+      <a href = "{{url_for('showHomePage')}}">Cancel</a>
+    </div>
+  </form>
+  <br>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title %}New Genre{% endblock %}
+{% block article_container %}
+<h1>Add A New Game Genre</h1>
+  <form action="#" method = "post">
+    <div class="form-group">
+    <p>Genre Name:</p>
+    <input type="text" name="catagory">
+    <br><br>
+    <input type="submit" value="Submit">
+    <a href = "{{url_for('showHomePage')}}">Cancel</a>
+    </div>
+  </form>
+  <br>
+{% endblock %}

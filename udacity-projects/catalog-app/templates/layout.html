@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang = "en">
+  <head>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width,initial-scale=1">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    {% block head %}
+    <link href = "https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel = "stylesheet" type = "text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>{% block title %}{% endblock %} - Video Games Catalog</title>
+    {% endblock %}
+  </head>
+  <body>
+    <header class = "header">
+      {% block loginbutton %}
+        <a id = "userbutton" class = "alignright" href="{{url_for('gdisconnect')}}">Logout</a>
+      {% endblock %}
+      <h1 class = "header_title">Video Games Catalog</h1>
+    </header>
+    <hr>
+    <section>
+        <nav id="nav_container">
+          {% block nav_container %}
+          <a class = "alignright" href = "{{url_for('newCatagory')}}">New Genre</a>
+          <br>
+          <ul style = "list-style-type:none">
+          {% for catagory in catagories %}
+
+          <li><a href = "{{url_for('displayCatagory', catagory=catagory.name)}}">{{catagory.name}}</a></li>
+          
+          {% endfor %}
+          </ul>
+          {% endblock %}
+        </nav>
+        <article id = "article_container">
+            {% block article_container %}
+            <ul style="list-style-type:none">
+            {% for game in games %}
+
+            <li><a href = "{{url_for('viewGame', catagory=game.catagory, game=game.name)}}">{{game.name}}</a></li>
+            
+            {% endfor %}
+            </ul>
+            {% endblock %}
+        </article>
+  </section>
+    <div  class = "alignright" id="footer">
+      {% block footer %}
+      Created by <a href="https://github.com/pduhamel2">Phillip DuHamel</a>.
+      {% endblock %}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block title %}{{game.name}}{% endblock %}
+{% block loginbutton %}
+  <a id = "userbutton" class = "alignright" href="{{url_for('showLogin')}}">Login</a>
+{% endblock %}
+{% block nav_container %}
+<ul style="list-style-type:none">
+  {% for catagory in catagories %}
+
+  <li><a href = "{{url_for('displayCatagory', catagory=catagory.name)}}">{{catagory.name}}</a></li>
+  
+  {% endfor %}
+  </ul>
+{% endblock %}
+{% block article_container %}
+  <h2>{{game.name}}</h2>
+  {{game.description}}
+{% endblock %}

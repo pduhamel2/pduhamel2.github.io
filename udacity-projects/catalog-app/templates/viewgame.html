@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block title %}{{game.name}}{% endblock %}
+{% block article_container %}
+  <a class = "alignright" href = "{{url_for('deleteGame', catagory=game.catagory, game=game.name)}}">Delete</a>
+  <a class = "alignright" href = "{{url_for('editGame', catagory=game.catagory, game=game.name)}}">Edit</a>
+  <h2>{{game.name}}</h2>
+  {{game.description}}
+{% endblock %}

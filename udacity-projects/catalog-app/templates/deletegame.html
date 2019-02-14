@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block title %}Delete {{game.name}}{% endblock %}
+{% block article_container %}
+  <p>Are you sure you want to delete {{game.name}}?</p>
+  <form action="#" method = 'post'>
+      <button type="submit" type="submit">Delete</button>
+      <a href = "{{url_for('showHomePage')}}">Cancel</a>
+  </form>
+  <br>
+{% endblock %}      

@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block title %}Delete {{catagory}}{% endblock %}
+{% block article_container %}
+  <p>Are you sure you want to delete the {{catagory}} genre?</p>
+  <form action="#" method = 'post'>
+      <button type="submit" type="submit">Delete</button>
+      <a href = "{{url_for('showHomePage')}}">Cancel</a>
+  </form>
+  <br>
+{% endblock %}

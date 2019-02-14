@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang = "en">
+  <head>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width,initial-scale=1">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <title>Manchester NH Restaurant Map</title>
+    <link href = "https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel = "stylesheet" type = "text/css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+<body>
+    <header id="header">
+        <h1 id="header_title" id="alignCenter">Popular Restaurants in Manchester New Hampshire</h1>
+        <hr>
+    </header>
+   <div id ="restaurant-list-container">
+     <strong>Find A Restaurant</strong>
+     <input id="searchInput" placeholder="Restaurant Name" type="text" oninput="searchRestaurants()">
+     <div data-bind="foreach: restaurants">
+          <p data-bind="click: showRestaurant, text: title" id="clickable"></p>
+    </div>
+   </div>
+   <div id="side-bar-toggle">
+    <button id="toggle-button" onclick="toggleSideBar()">Expand Map</button>
+   </div>
+   <div id="map"></div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src='http://ajax.aspnetcdn.com/ajax/knockout/knockout-3.4.2.js'></script>
+   <script src="js/script.js"></script>
+   <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDs3bZRSBz5iZqn-pT3XfgzBq4p1R004G8&libraries=geometry&v=3&callback=initializeMap" onerror="googleError()">
+   </script>
+</body>
+</html>
