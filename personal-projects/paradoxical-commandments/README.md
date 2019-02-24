@@ -2,7 +2,7 @@ The Paradoxical Commandments
 ============================
 
 ## Project Description:
-I was once asked in an interview what article or book I've read that has had the most positive influence on me. At that time I drew a blank, but after the interview I remembered and regretted not saying The Paradoxical Commandments, as I always find myself coming back to it. I decided to make a web page for others to reading it on. Enjoy.
+I was once asked in an interview what article or book I've read that has had the most positive influence on me. At that time I drew a blank, but after the interview I remembered and regretted not saying The Paradoxical Commandments, as I always find myself coming back to it. I decided to make a web page for others to read it on. Enjoy.
 
 ## Dependencies:
 * Internet Browser.
