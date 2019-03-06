@@ -162,8 +162,6 @@ $(".answer").click(function () {
     $(this).addClass("wrong");
   }
   $(".btn").blur();
-  $(".btn").focusout();
-  $("#main-image").focus();
   $(".answer").addClass("disable-button");
   currentPokemon++;
   setTimeout(function () {
