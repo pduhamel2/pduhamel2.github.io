@@ -1,14 +1,14 @@
-PokÈmon Quiz
+Pok√©mon Quiz
 =============
 
 ## Project Description:
-This PokÈmon Quiz app utilizes the PokÈAPI to request information on 20 random PokÈmon of the original 151. It then displays an image of one of them along with three possible answers, two if which are random. It also utilizes the jQuery and Bootstrap 4 libraries.
+This Pok√©mon Quiz app utilizes the Pok√©API to request information on 20 random Pok√©mon of the original 151. It then displays an image of one of them along with three possible answers, two of which are random. It also utilizes the jQuery and Bootstrap 4 libraries.
 
 ## Dependencies:
 * Internet Browser
 
 ## Opening The Webpage:
-1. Download the pokÈmon-quiz folder.
+1. Download the pok√©mon-quiz folder.
 2. Unzip and open the folder.
 3. Double click the index.html file.
 
