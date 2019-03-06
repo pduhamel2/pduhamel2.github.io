@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(59, 105, 255);
+    color: yellow;
+}
+img {
+    width: 192px;
+    height: 192px;
+}
+.hidden {
+    display: none;
+}
+.correct {
+    background-color: rgb(76, 175, 80);
+    border: 1px solid rgb(76, 175, 80);
+    color: white;
+}
+.wrong {
+    background-color: rgb(255, 17, 0);
+    border: 1px solid rgb(255, 17, 0);
+    color: white;
+}
+.disable-button {
+    cursor: not-allowed;
+    pointer-events: none;
+}
+.trainer-image {
+    width: 128px;
+    height: 128px;
+}
+#progress-bar-container {
+    width: 50%;
+    margin: auto;
+}
