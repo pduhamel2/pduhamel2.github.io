@@ -161,6 +161,7 @@ $(".answer").click(function () {
     $("h2").html("Nice try, it's " + pokemonList[currentPokemon].name + "!");
     $(this).addClass("wrong");
   }
+  $(".btn").blur();
   $(".answer").addClass("disable-button");
   currentPokemon++;
   setTimeout(function () {
