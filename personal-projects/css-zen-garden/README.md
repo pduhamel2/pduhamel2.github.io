@@ -2,7 +2,7 @@ CSS Zen Garden: Kyoto Style
 ============================
 
 ## Project Description:
-The [CSS Zen Garden](http://www.csszengarden.com/) is a challenge meant to demonstrate what can be accomplished through CSS-based design. In the challange you are given an HTML file, which you are not allowed to edit, and an external CSS file which you use to design and style the page.
+The [CSS Zen Garden](http://www.csszengarden.com/) is a challenge meant to demonstrate what can be accomplished through CSS-based design. In the challenge you are given an HTML file, which you are not allowed to edit, and an external CSS file which you use to design and style the page.
 
 ## Dependencies:
 * Internet Browser, [Google Chrome](https://www.google.com/chrome/) prefered.
