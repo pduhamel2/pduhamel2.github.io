@@ -1,6 +1,6 @@
 html {
 	height: 100%;
-	}
+}
 
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -46,6 +46,7 @@ span {
 
 span:hover {
 	color: #cc0000;
+	cursor: pointer;
 }
 
 input[type="checkbox"] {
@@ -58,8 +59,15 @@ input[type="checkbox"] {
 	text-decoration: line-through;
 }
 
-.fa-plus {
+.fa-plus,
+.fa-minus {
 	float: right;
+	margin-left: .2em;
+}
+
+.fa-plus:hover,
+.fa-minus:hover {
+	cursor: pointer;
 }
 
 #container {
@@ -67,7 +75,7 @@ input[type="checkbox"] {
 	box-shadow: 0 0 10px rgba(204, 255, 220, 0.9);
 	border: none;
 	width: 380px;
-	margin: 100px auto; 
+	margin: 100px auto;
 }
 
 #newItem {
