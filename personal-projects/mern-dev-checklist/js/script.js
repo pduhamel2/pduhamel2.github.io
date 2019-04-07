@@ -1,3 +1,5 @@
+let newItemOpen = true;
+
 $('ul').on('click', ':checkbox', function() {
 	$(this).parent().toggleClass('completed');
 });
@@ -16,17 +18,13 @@ $("input[type='text']").keypress(function(event) {
 	}
 });
 
-let newItemOpen = true;
-
 $('.newItemToggle').click(function() {
 	$("input[type='text']").fadeToggle();
 	if (newItemOpen) {
 		$(this).removeClass('fa-minus').addClass('fa-plus');
 		newItemOpen = false;
-		console.log('closed');
 	} else {
 		$(this).removeClass('fa-plus').addClass('fa-minus');
 		newItemOpen = true;
-		console.log('opoened');
 	}
 });
