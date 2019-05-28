@@ -83,6 +83,15 @@ body {
   width: 70%;
 }
 
+.copyright__link:link, .copyright__link:visited {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.copyright__link:hover, .copyright__link:active {
+  background-color: #fd968a;
+}
+
 .navigation {
   background-color: aqua;
   grid-column: center-start / center-end;
