@@ -1,23 +1,35 @@
 .navigation {
     background-color: aqua;
+    grid-column: center-start / center-end;
+    grid-row: 1 / 2;
 }
 
 .header {
     background-color: blueviolet;
+    grid-column: center-start / center-end;
+    grid-row: 2 / 3;
 }
 
 .about {
     background-color: chartreuse;
+    grid-column: center-start / center-end;
+    grid-row: 3 / 4;
 }
 
 .reviews {
     background-color: crimson;
+    grid-column: center-start / center-end;
+    grid-row: 4 / 5;
 }
 
 .gallery {
     background-color: darkgreen;
+    grid-column: center-start / center-end;
+    grid-row: 5 / 6;
 }
 
 .footer {
     background-color: salmon;
+    grid-column: center-start / center-end;
+    grid-row: 6 / 7;
 }
