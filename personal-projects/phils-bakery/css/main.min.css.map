@@ -1,8 +1,13 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AEAA,AAAA,CAAC,CACD,CAAC,AAAA,OAAO,CACR,CAAC,AAAA,QAAQ,AAAC,CACN,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACV,UAAU,CAAE,OAAO,CACtB,AAED,AAAA,IAAI,AAAC,CACD,SAAS,CAAE,KAAK,CACnB,AAED,AAAA,IAAI,AAAC,CACD,UAAU,CAAE,UAAU,CACtB,OAAO,CAAE,IAAI,CAChB,ACfD,AAAA,IAAI,AAAC,CACD,WAAW,CAAE,wBAAwB,CACrC,WAAW,CAAE,GAAG,CAChB,WAAW,CAAE,GAAG,CACnB,ACJD,AAAA,SAAS,AAAC,CAEN,GAAG,CAAE,CAAC,CACN,IAAI,CAAE,CAAC,CACP,MAAM,CAAE,IAAI,CACZ,KAAK,CAAE,IAAI,CACX,OAAO,CAAE,EAAE,CAEX,QAAQ,CAAE,MAAM,CAOnB,AALI,AAAD,kBAAU,AAAC,CACP,MAAM,CAAE,IAAI,CACZ,KAAK,CAAE,GAAG,CACV,UAAU,CAAE,KAAK,CACpB",
     "sources": [
-        "../sass/main.scss"
+        "../sass/main.scss",
+        "../sass/abstracts/_variables.scss",
+        "../sass/base/_base.scss",
+        "../sass/base/_typography.scss",
+        "../sass/components/_bg-video.scss",
+        "../sass/layout/_navigation.scss"
     ],
     "names": [],
     "file": "main.min.css"

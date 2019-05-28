@@ -1,6 +1,8 @@
 @import "abstracts/variables";
 
-@import "abstracts/base";
-@import "abstracts/typography";
+@import "base/base";
+@import "base/typography";
 
 @import "components/bg-video";
+
+@import "layout/navigation";

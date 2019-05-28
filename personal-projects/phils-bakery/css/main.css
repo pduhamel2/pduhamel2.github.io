@@ -1,1 +1,61 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5rem;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.bg-video {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.bg-video__content {
+  height: 100%;
+  width: 100;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.navigation {
+  /* 
+    &__list {
+        list-style: none;
+
+        font-size: 1.6rem;
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        grid-gap: 2rem;
+        justify-content: space-between;
+        align-items: center;
+        background-color: orangered;
+    }
+
+    &__item {
+        background-color: white;
+        text-decoration: none;
+    } */
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,8 +1,13 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AEAA,AAAA,CAAC;AACD,CAAC,AAAA,OAAO;AACR,CAAC,AAAA,QAAQ,CAAC;EACN,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,OAAO;CACtB;;AAED,AAAA,IAAI,CAAC;EACD,SAAS,EAAE,KAAK;CACnB;;AAED,AAAA,IAAI,CAAC;EACD,UAAU,EAAE,UAAU;EACtB,OAAO,EAAE,IAAI;CAChB;;ACfD,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,wBAAwB;EACrC,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,GAAG;CACnB;;ACJD,AAAA,SAAS,CAAC;EAEN,GAAG,EAAE,CAAC;EACN,IAAI,EAAE,CAAC;EACP,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,EAAE;EAEX,QAAQ,EAAE,MAAM;CAOnB;;AALI,AAAD,kBAAU,CAAC;EACP,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,GAAG;EACV,UAAU,EAAE,KAAK;CACpB;;ACdL,AAAA,WAAW,CAAC;EACR;;;;;;;;;;;;;;;;QAgBI;CACP",
     "sources": [
-        "../sass/main.scss"
+        "../sass/main.scss",
+        "../sass/abstracts/_variables.scss",
+        "../sass/base/_base.scss",
+        "../sass/base/_typography.scss",
+        "../sass/components/_bg-video.scss",
+        "../sass/layout/_navigation.scss"
     ],
     "names": [],
     "file": "main.css"
