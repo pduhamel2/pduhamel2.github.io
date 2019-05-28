@@ -23,39 +23,27 @@ body {
   line-height: 1.7;
 }
 
-.bg-video {
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  overflow: hidden;
-}
-
-.bg-video__content {
-  height: 100%;
-  width: 100;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .navigation {
-  /* 
-    &__list {
-        list-style: none;
+  background-color: aqua;
+}
 
-        font-size: 1.6rem;
-        display: grid;
-        grid-template-columns: repeat(6, auto);
-        grid-gap: 2rem;
-        justify-content: space-between;
-        align-items: center;
-        background-color: orangered;
-    }
+.header {
+  background-color: blueviolet;
+}
 
-    &__item {
-        background-color: white;
-        text-decoration: none;
-    } */
+.about {
+  background-color: chartreuse;
+}
+
+.reviews {
+  background-color: crimson;
+}
+
+.gallery {
+  background-color: darkgreen;
+}
+
+.footer {
+  background-color: salmon;
 }
 /*# sourceMappingURL=main.css.map */
