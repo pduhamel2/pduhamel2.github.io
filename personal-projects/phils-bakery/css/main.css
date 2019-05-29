@@ -35,6 +35,24 @@ body {
   line-height: 1.7;
 }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .4;
+  overflow: hidden;
+}
+
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .footer {
   background-color: salmon;
   grid-column: center-start / center-end;
@@ -142,11 +160,11 @@ body {
 }
 
 .header {
-  background-color: blueviolet;
   grid-column: center-start / center-end;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2 / 3;
+  position: relative;
 }
 
 .about {
