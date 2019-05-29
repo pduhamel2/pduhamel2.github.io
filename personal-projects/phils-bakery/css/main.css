@@ -47,6 +47,34 @@ body {
   font-family: "Great Vibes", cursive;
 }
 
+.u-center-text {
+  text-align: center !important;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 3rem !important;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 5rem !important;
+}
+
+.u-margin-top-small {
+  margin-top: 1.5rem !important;
+}
+
+.u-margin-top-medium {
+  margin-top: 3rem !important;
+}
+
+.u-margin-top-big {
+  margin-top: 5rem !important;
+}
+
 .bg-video {
   position: absolute;
   top: 0;
@@ -240,11 +268,16 @@ body {
 }
 
 .about {
-  background-color: chartreuse;
   grid-column: center-start / center-end;
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3 / 4;
+  background-color: #ececec;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr max-content 1fr;
+      grid-template-columns: 1fr -webkit-max-content 1fr;
+      grid-template-columns: 1fr max-content 1fr;
 }
 
 .reviews {
