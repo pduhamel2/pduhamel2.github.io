@@ -92,6 +92,27 @@ body {
      object-fit: cover;
 }
 
+hr {
+  overflow: visible;
+  /* For IE */
+  height: 30px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+
+hr:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
 .footer {
   background-color: salmon;
   grid-column: center-start / center-end;
@@ -275,9 +296,19 @@ body {
   background-color: #ececec;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr max-content 1fr;
-      grid-template-columns: 1fr -webkit-max-content 1fr;
-      grid-template-columns: 1fr max-content 1fr;
+  -ms-grid-columns: 1fr 55rem 1fr;
+      grid-template-columns: 1fr 55rem 1fr;
+}
+
+.about__content {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+.about__info {
+  font-size: 1.6rem;
+  text-indent: 50px;
 }
 
 .reviews {

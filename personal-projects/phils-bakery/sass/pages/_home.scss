@@ -22,7 +22,16 @@
     grid-row: 3 / 4;
     background-color: $color-grey-light-1;
     display: grid;
-    grid-template-columns: 1fr max-content 1fr;
+    grid-template-columns: 1fr 55rem 1fr;
+
+    &__content {
+        grid-column: 2 / 3;
+    }
+
+    &__info {
+        font-size: 1.6rem;
+        text-indent: 50px;
+    }
 }
 
 .reviews {
