@@ -3,3 +3,17 @@ body {
     font-weight: 400;
     line-height: 1.7;
 }
+
+.heading-1 {
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+.heading-2 {
+
+    &--italic {
+        font-weight: 500i;
+        font-style: italic;
+        font-size: 3.5rem;
+    }
+}
