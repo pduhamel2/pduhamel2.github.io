@@ -28,10 +28,10 @@
         &__link:active {
             background-color: $color-footer-links;
             transform: translateY(-3px);
+            box-shadow: .3rem .3rem .2rem rgb(71, 71, 71);
         }
     }
 }
-
 
 .copyright {
     font-size: 1.4rem;
