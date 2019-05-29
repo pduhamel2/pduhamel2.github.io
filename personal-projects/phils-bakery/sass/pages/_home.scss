@@ -2,6 +2,19 @@
     grid-column: center-start / center-end;
     grid-row: 2 / 3;
     position: relative;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    background-color: rgba(0, 0, 0, .5);
+
+    &__headings {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        grid-column: 2 / 3;
+        color: $color-white;
+        display: grid;
+        justify-items: center;
+        align-content: space-between;
+    }
 }
 
 .about {

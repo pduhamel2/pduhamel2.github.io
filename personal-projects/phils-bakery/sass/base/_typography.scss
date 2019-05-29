@@ -5,15 +5,19 @@ body {
 }
 
 .heading-1 {
-    font-weight: 700;
-    font-size: 5rem;
+
+    &--cursive {
+        font-weight: 400;
+        font-size: 7rem;
+        font-family: $font-cursive;
+    }
 }
 
 .heading-2 {
 
-    &--italic {
-        font-weight: 500i;
-        font-style: italic;
-        font-size: 3.5rem;
+    &--cursive {
+        font-weight: 400;
+        font-size: 5rem;
+        font-family: $font-cursive;
     }
 }
