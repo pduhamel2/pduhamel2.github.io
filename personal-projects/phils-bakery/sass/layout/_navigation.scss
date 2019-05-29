@@ -19,7 +19,41 @@
         color: $color-white;
     }
 
+    &__item {
+        position: relative;
+    }
+
+    &__item::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 3px;
+        background-color: $color-secondary;
+        transform: scaleY(0);
+        transition: transform .2s, width .4s cubic-bezier(1, 0, 0, 1) .2s;
+    }
+
+    &__item:hover::before,
+    &__item--active::before {
+        transform: scaleY(1);
+        width: 100%;
+    }
+
     &__link:link,
+    &__link:visited {
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: $color-white;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: block;
+        padding: 1.5rem;
+        position: relative;
+        z-index: 10;
+    }
+
+    /*     &__link:link,
     &__link:visited {
         font-size: 1.8rem;
         font-weight: 500;
@@ -38,5 +72,5 @@
         background-color: rgb(0, 226, 226);
         transform: translateY(-3px);
         box-shadow: .2rem .2rem .2rem rgb(71, 71, 71);
-    }
+    } */
 }
