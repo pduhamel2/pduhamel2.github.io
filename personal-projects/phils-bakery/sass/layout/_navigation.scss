@@ -31,13 +31,21 @@
         width: 3px;
         background-color: $color-secondary;
         transform: scaleY(0);
-        transition: transform .2s, width .4s cubic-bezier(1, 0, 0, 1) .2s;
+        transition: transform .2s, width .4s cubic-bezier(1, 0, 0, 1) .2s, background-color .1s;
+    }
+
+    &__item:hover {
+        transform: translateX(2px);
     }
 
     &__item:hover::before,
     &__item--active::before {
         transform: scaleY(1);
-        width: 100%;
+        width: calc(100% - 2px);
+    }
+
+    &__item:active::before {
+        background-color: $color-secondary-light;
     }
 
     &__link:link,

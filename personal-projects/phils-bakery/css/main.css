@@ -93,6 +93,14 @@ body {
           box-shadow: 0.3rem 0.3rem 0.2rem #474747;
 }
 
+.footer__nav__link:active {
+  background-color: #ff9b90;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .copyright {
   font-size: 1.4rem;
   color: #fff;
@@ -174,16 +182,25 @@ body {
   background-color: #ff0080;
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
-  -webkit-transition: width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, -webkit-transform 0.2s;
-  transition: width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, -webkit-transform 0.2s;
-  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s;
-  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, -webkit-transform 0.2s;
+  -webkit-transition: width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s, -webkit-transform 0.2s;
+  transition: width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s, -webkit-transform 0.2s;
+  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s;
+  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s, -webkit-transform 0.2s;
+}
+
+.navigation__item:hover {
+  -webkit-transform: translateX(2px);
+          transform: translateX(2px);
 }
 
 .navigation__item:hover::before, .navigation__item--active::before {
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
-  width: 100%;
+  width: calc(100% - 2px);
+}
+
+.navigation__item:active::before {
+  background-color: #ff2f97;
 }
 
 .navigation__link:link, .navigation__link:visited {

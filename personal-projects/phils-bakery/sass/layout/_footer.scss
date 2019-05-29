@@ -30,6 +30,12 @@
             transform: translateY(-3px);
             box-shadow: .3rem .3rem .2rem rgb(71, 71, 71);
         }
+
+        &__link:active {
+            background-color: $color-footer-links-light;
+            transform: translateY(3px);
+            box-shadow: none;
+        }
     }
 }
 
