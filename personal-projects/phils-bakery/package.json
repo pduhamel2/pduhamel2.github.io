@@ -1,0 +1,10 @@
+{
+  "name": "phils-bakery",
+  "version": "1.0.0",
+  "description": "A fictional website I made to practice Sass and SCSS",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Phillip DuHamel",
+  "license": "ISC",
+  "devDependencies": {}
+}
