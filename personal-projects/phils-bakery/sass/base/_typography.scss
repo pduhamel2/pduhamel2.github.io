@@ -21,3 +21,18 @@ body {
         font-family: $font-cursive;
     }
 }
+
+.heading-3 {
+    font-size: 2.5rem;
+
+    &--italic {
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    &--cursive {
+        font-weight: 400;
+        font-size: 5rem;
+        font-family: $font-cursive;
+    }
+}
