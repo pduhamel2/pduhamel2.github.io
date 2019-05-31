@@ -21,8 +21,9 @@
 .about {
     grid-column: center-start / center-end;
     grid-row: 3 / 4;
-    //background-color: rgba($color-grey-light-1, .93);
     background-color: $color-grey-light-1;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    padding-bottom: 7rem;
 
     display: grid;
     grid-template-columns: 1fr 55rem 1fr;
@@ -38,8 +39,9 @@
 }
 
 .customer-reviews {
-    //background-color: rgba($color-primary, .93);
     background-color: $color-primary;
+    margin-top: -11rem;
+    padding-top: 9rem;
     grid-column: center-start / center-end;
     grid-row: 4 / 5;
 

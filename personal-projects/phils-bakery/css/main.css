@@ -315,6 +315,9 @@ hr:before {
   -ms-grid-row-span: 1;
   grid-row: 3 / 4;
   background-color: whitesmoke;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  padding-bottom: 7rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 55rem 1fr;
@@ -334,6 +337,8 @@ hr:before {
 
 .customer-reviews {
   background-color: #00e9e9;
+  margin-top: -11rem;
+  padding-top: 9rem;
   grid-column: center-start / center-end;
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
