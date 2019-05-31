@@ -14,11 +14,17 @@ html {
 }
 
 body {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  background-image: url("../img/macaroon-colorful.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100%;
 }
 
 .container {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: min-content 60vh min-content max-content (min-content)[2];

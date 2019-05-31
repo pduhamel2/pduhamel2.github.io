@@ -12,11 +12,17 @@ html {
 }
 
 body {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    background-image: url("../img/macaroon-colorful.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100%;
 }
 
 .container {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     display: grid;
     grid-template-rows: min-content 60vh min-content max-content repeat(2, min-content);
     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
