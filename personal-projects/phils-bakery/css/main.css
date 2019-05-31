@@ -357,6 +357,14 @@ hr:before {
   color: #fff;
 }
 
+.customer-reviews__pictures {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .customer-reviews__picture {
   max-width: 60%;
   border-radius: 1.5rem;
