@@ -337,8 +337,8 @@ hr:before {
 
 .customer-reviews {
   background-color: #00e9e9;
-  margin-top: -11rem;
-  padding-top: 9rem;
+  margin-top: -9rem;
+  padding-top: 8rem;
   grid-column: center-start / center-end;
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
