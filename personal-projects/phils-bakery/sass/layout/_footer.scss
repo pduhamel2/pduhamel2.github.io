@@ -1,8 +1,8 @@
 .footer {
-    background-color: salmon;
+    background-color: rgb(253, 120, 105);
     grid-column: center-start / center-end;
     grid-row: 6 / 7;
-    padding: 5rem;
+    padding: 3rem;
 
     &__nav {
         list-style: none;
@@ -42,7 +42,7 @@
 .copyright {
     font-size: 1.4rem;
     color: $color-white;
-    margin-top: 5rem;
+    margin-top: 3rem;
     margin-right: auto;
     margin-left: auto;
     text-align: center;

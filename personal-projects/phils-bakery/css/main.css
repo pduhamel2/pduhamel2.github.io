@@ -135,12 +135,12 @@ hr:before {
 }
 
 .footer {
-  background-color: salmon;
+  background-color: #fd7869;
   grid-column: center-start / center-end;
   -ms-grid-row: 6;
   -ms-grid-row-span: 1;
   grid-row: 6 / 7;
-  padding: 5rem;
+  padding: 3rem;
 }
 
 .footer__nav {
@@ -175,7 +175,7 @@ hr:before {
 }
 
 .footer__nav__link:active {
-  background-color: #ff9b90;
+  background-color: #ff8a7d;
   -webkit-transform: translateY(3px);
           transform: translateY(3px);
   -webkit-box-shadow: none;
@@ -185,7 +185,7 @@ hr:before {
 .copyright {
   font-size: 1.4rem;
   color: #fff;
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
