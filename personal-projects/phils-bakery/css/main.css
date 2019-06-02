@@ -227,7 +227,7 @@ hr:before {
           align-items: center;
 }
 
-@media only screen and (max-width: 59em) {
+@media only screen and (max-width: 60em) {
   .navigation {
     padding: 0;
     -ms-grid-columns: 18rem (minmax(12rem, 1fr))[auto-fit];
@@ -254,6 +254,12 @@ hr:before {
 .navigation__item {
   position: relative;
   text-align: center;
+}
+
+@media only screen and (max-width: 53em) {
+  .navigation__item {
+    display: none;
+  }
 }
 
 .navigation__item::before {
@@ -296,6 +302,64 @@ hr:before {
   padding: 1.5rem;
   position: relative;
   z-index: 10;
+}
+
+.navigation__dropdown {
+  font-size: 1.8rem;
+  font-weight: 500;
+  display: none;
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-left: auto;
+  position: relative;
+}
+
+@media only screen and (max-width: 53em) {
+  .navigation__dropdown {
+    display: block;
+  }
+}
+
+.navigation__dropdown-icon {
+  color: #fff;
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.navigation__dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #1d1d1d;
+  z-index: 1;
+  -webkit-transform: translateY(0.5rem);
+          transform: translateY(0.5rem);
+}
+
+.navigation__dropdown-item {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  float: none;
+  padding: 1.2rem 1.6rem;
+  display: block;
+  text-align: left;
+}
+
+.navigation__dropdown-item:hover {
+  background-color: #ff0080;
+}
+
+.navigation__dropdown-item:active {
+  background-color: #ff2f97;
+}
+
+.openDropDown {
+  background-color: #ff0080;
+}
+
+.openDropDown > * {
+  display: block;
 }
 
 .header {

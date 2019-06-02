@@ -9,6 +9,8 @@ $color-grey-light-2: rgb(197, 197, 197);
 $color-white: #fff;
 $color-black: #000;
 
+$color-navbar-bg: rgb(29, 29, 29);
+
 $color-footer-links: rgb(255, 141, 129);
 $color-footer-links-light: rgb(255, 138, 125);
 
@@ -26,5 +28,5 @@ $box-shadow: .3rem .3rem .2rem rgb(71, 71, 71);
 
 // RESPONSIVE BREAKPOINTS
 $bp-largest: 68em; //1088px / 16px
-$bp-large: 59em; //944px / 16px
+$bp-large: 60em; //960px / 16px
 $bp-medium: 53em; //848px /16px

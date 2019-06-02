@@ -1,5 +1,5 @@
 .navigation {
-    background-color: rgb(29, 29, 29);
+    background-color: $color-navbar-bg;
     grid-column: center-start / center-end;
     grid-row: 1 / 2;
     padding: .5rem;
@@ -30,6 +30,10 @@
     &__item {
         position: relative;
         text-align: center;
+
+        @media only screen and (max-width: $bp-medium) {
+            display: none;
+        }
     }
 
     &__item::before {
@@ -68,5 +72,60 @@
         padding: 1.5rem;
         position: relative;
         z-index: 10;
+    }
+
+    &__dropdown {
+        font-size: 1.8rem;
+        font-weight: 500;
+        display: none;
+        padding: 1rem;
+        margin-right: 1rem;
+        margin-left: auto;
+        position: relative;
+
+        @media only screen and (max-width: $bp-medium) {
+            display: block;
+        }
+
+        &-icon {
+            color: $color-white;
+            font-size: 3rem;
+            padding: 1rem;
+        }
+
+        &-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: $color-navbar-bg;
+            z-index: 1;
+            transform: translateY(.5rem);
+        }
+
+        &-item {
+            color: $color-white;
+            text-decoration: none;
+            text-transform: uppercase;
+            float: none;
+            padding: 1.2rem 1.6rem;
+            display: block;
+            text-align: left;
+
+            &:hover {
+                background-color: $color-secondary;
+            }
+
+            &:active {
+                background-color: $color-secondary-light;
+            }
+        }
+    }
+}
+
+.openDropDown {
+    background-color: $color-secondary;
+
+    &>* {
+        display: block;
     }
 }
