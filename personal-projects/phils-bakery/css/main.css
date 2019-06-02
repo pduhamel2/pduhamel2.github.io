@@ -35,6 +35,15 @@ body {
       grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
 
+@media only screen and (max-width: 68em) {
+  .container {
+    padding: 0;
+    -ms-grid-columns: [center-start] ([col-start] minmax(min-content, 14rem) [col-end])[8] [center-end];
+        grid-template-columns: [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 14rem) [col-end]) [center-end];
+        grid-template-columns: [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end];
+  }
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -218,6 +227,14 @@ hr:before {
           align-items: center;
 }
 
+@media only screen and (max-width: 59em) {
+  .navigation {
+    padding: 0;
+    -ms-grid-columns: 18rem (minmax(12rem, 1fr))[auto-fit];
+        grid-template-columns: 18rem repeat(auto-fit, minmax(12rem, 1fr));
+  }
+}
+
 .navigation__logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -384,7 +401,7 @@ hr:before {
   background-color: whitesmoke;
   -webkit-box-shadow: 0.3rem 0.3rem 0.2rem #474747;
           box-shadow: 0.3rem 0.3rem 0.2rem #474747;
-  width: 80%;
+  max-width: 80%;
   border-radius: 15px;
   padding: 2rem;
   position: relative;

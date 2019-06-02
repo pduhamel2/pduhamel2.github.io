@@ -75,7 +75,7 @@
     .review {
         background-color: $color-grey-light-1;
         box-shadow: $box-shadow;
-        width: 80%;
+        max-width: 80%;
         border-radius: 15px;
         padding: 2rem;
         position: relative;

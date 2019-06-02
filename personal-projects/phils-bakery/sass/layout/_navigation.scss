@@ -10,6 +10,11 @@
     grid-template-columns: 18rem repeat(auto-fit, minmax(15rem, 1fr));
     align-items: center;
 
+    @media only screen and (max-width: $bp-large) {
+        padding: 0;
+        grid-template-columns: 18rem repeat(auto-fit, minmax(12rem, 1fr));
+    }
+
     &__logo {
         display: flex;
         align-items: center;
