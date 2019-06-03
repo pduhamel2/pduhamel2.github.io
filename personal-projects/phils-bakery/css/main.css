@@ -22,6 +22,16 @@ body {
   min-height: 100%;
 }
 
+body ::-moz-selection {
+  color: #fff;
+  background: #ff0080;
+}
+
+body ::selection {
+  color: #fff;
+  background: #ff0080;
+}
+
 .container {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -56,10 +66,22 @@ body {
   font-family: "Great Vibes", cursive;
 }
 
+@media only screen and (max-width: 42em) {
+  .heading-1--cursive {
+    font-size: 5rem;
+  }
+}
+
 .heading-2--cursive {
   font-weight: 400;
   font-size: 5rem;
   font-family: "Great Vibes", cursive;
+}
+
+@media only screen and (max-width: 42em) {
+  .heading-2--cursive {
+    font-size: 3.5rem;
+  }
 }
 
 .heading-3 {
@@ -390,19 +412,36 @@ hr:before {
       align-content: space-between;
 }
 
+@media only screen and (max-width: 32em) {
+  .header__headings h2 {
+    font-size: 3rem;
+  }
+}
+
 .about {
   grid-column: center-start / center-end;
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3 / 4;
   background-color: whitesmoke;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);
   padding-bottom: 7rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 55rem 1fr;
       grid-template-columns: 1fr 55rem 1fr;
+}
+
+@media only screen and (max-width: 42em) {
+  .about {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+  }
 }
 
 .about__content {

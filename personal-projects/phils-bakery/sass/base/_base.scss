@@ -18,6 +18,11 @@ body {
     background-position: center;
     background-attachment: fixed;
     min-height: 100%;
+
+    ::selection {
+        color: $color-white;
+        background: $color-secondary;
+    }
 }
 
 .container {
