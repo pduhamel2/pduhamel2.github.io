@@ -105,6 +105,12 @@ body {
   font-family: "Great Vibes", cursive;
 }
 
+@media only screen and (max-width: 42em) {
+  .heading-3 {
+    font-size: 2rem;
+  }
+}
+
 .u-center-text {
   text-align: center !important;
 }
