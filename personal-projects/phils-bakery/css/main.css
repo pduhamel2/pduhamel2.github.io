@@ -32,6 +32,12 @@ body ::selection {
   background: #ff0080;
 }
 
+@media only screen and (max-width: 68em) {
+  body {
+    background-image: none;
+  }
+}
+
 .container {
   padding-top: 6rem;
   padding-bottom: 6rem;

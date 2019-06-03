@@ -23,6 +23,10 @@ body {
         color: $color-white;
         background: $color-secondary;
     }
+
+    @media only screen and (max-width: $bp-largest) {
+        background-image: none;
+    }
 }
 
 .container {
