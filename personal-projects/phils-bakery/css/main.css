@@ -388,6 +388,10 @@ hr:before {
   background-color: #ff2f97;
 }
 
+.navigation__dropdown:hover {
+  cursor: pointer;
+}
+
 .openDropDown {
   background-color: #ff0080;
 }

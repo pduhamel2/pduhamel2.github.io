@@ -120,6 +120,10 @@
             }
         }
     }
+
+    &__dropdown:hover {
+        cursor: pointer;
+    }
 }
 
 .openDropDown {
