@@ -46,37 +46,43 @@
     grid-row: 4 / 5;
 
     display: grid;
-    grid-template-rows: max-content max-content;
-    grid-template-columns: 40% 1fr;
+    grid-template-rows: max-content max-content max-content;
 
     h2 {
-        grid-column: 1 / -1;
         color: $color-white;
     }
 
-    &__pictures {
-        display: grid;
-        align-items: center;
+    &__section {
+        padding: 2rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            display: grid;
+            grid-template-rows: max-content max-content;
+        }
     }
 
     &__picture {
-        max-width: 60%;
+        max-width: 20%;
         border-radius: 1.5rem;
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-    }
+        display: inline-block;
+        margin: 2rem;
+        margin-left: 5rem;
 
-    &__reviews {
-        display: grid;
-        align-content: space-around;
+        @media only screen and (max-width: $bp-medium) {
+            max-width: 40%;
+            margin-right: auto;
+            margin-left: auto;
+        }
     }
 
     .review {
         background-color: $color-grey-light-1;
         box-shadow: $box-shadow;
-        max-width: 80%;
-        border-radius: 15px;
+        min-width: 34rem;
+        max-width: 60%;
+        border-radius: 1.5rem;
+        display: inline-block;
+        margin: 2rem;
         padding: 2rem;
         position: relative;
         overflow: hidden;
@@ -121,6 +127,11 @@
             font-family: sans-serif;
             color: rgb(223, 223, 223);
             z-index: 1;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            margin-right: auto;
+            margin-left: auto;
         }
     }
 }

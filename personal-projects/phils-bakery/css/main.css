@@ -426,47 +426,54 @@ hr:before {
   grid-row: 4 / 5;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: max-content max-content;
-      grid-template-rows: -webkit-max-content -webkit-max-content;
-      grid-template-rows: max-content max-content;
-  -ms-grid-columns: 40% 1fr;
-      grid-template-columns: 40% 1fr;
+  -ms-grid-rows: max-content max-content max-content;
+      grid-template-rows: -webkit-max-content -webkit-max-content -webkit-max-content;
+      grid-template-rows: max-content max-content max-content;
 }
 
 .customer-reviews h2 {
-  grid-column: 1 / -1;
   color: #fff;
 }
 
-.customer-reviews__pictures {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.customer-reviews__section {
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 53em) {
+  .customer-reviews__section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: max-content max-content;
+        grid-template-rows: -webkit-max-content -webkit-max-content;
+        grid-template-rows: max-content max-content;
+  }
 }
 
 .customer-reviews__picture {
-  max-width: 60%;
+  max-width: 20%;
   border-radius: 1.5rem;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+  display: inline-block;
+  margin: 2rem;
+  margin-left: 5rem;
 }
 
-.customer-reviews__reviews {
-  display: -ms-grid;
-  display: grid;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
+@media only screen and (max-width: 53em) {
+  .customer-reviews__picture {
+    max-width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .customer-reviews .review {
   background-color: whitesmoke;
   -webkit-box-shadow: 0.3rem 0.3rem 0.2rem #474747;
           box-shadow: 0.3rem 0.3rem 0.2rem #474747;
-  max-width: 80%;
-  border-radius: 15px;
+  min-width: 34rem;
+  max-width: 60%;
+  border-radius: 1.5rem;
+  display: inline-block;
+  margin: 2rem;
   padding: 2rem;
   position: relative;
   overflow: hidden;
@@ -512,6 +519,13 @@ hr:before {
   font-family: sans-serif;
   color: #dfdfdf;
   z-index: 1;
+}
+
+@media only screen and (max-width: 53em) {
+  .customer-reviews .review {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .gallery {
