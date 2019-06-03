@@ -488,23 +488,7 @@ hr:before {
   }
 }
 
-.customer-reviews__picture {
-  max-width: 20%;
-  border-radius: 1.5rem;
-  display: inline-block;
-  margin: 2rem;
-  margin-left: 5rem;
-}
-
-@media only screen and (max-width: 53em) {
-  .customer-reviews__picture {
-    max-width: 40%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-.customer-reviews .review {
+.customer-reviews__section .review {
   background-color: whitesmoke;
   -webkit-box-shadow: 0.3rem 0.3rem 0.2rem #474747;
           box-shadow: 0.3rem 0.3rem 0.2rem #474747;
@@ -513,30 +497,31 @@ hr:before {
   border-radius: 1.5rem;
   display: inline-block;
   margin: 2rem;
+  margin-bottom: 6%;
   padding: 2rem;
   position: relative;
   overflow: hidden;
 }
 
-.customer-reviews .review__title {
+.customer-reviews__section .review__title {
   text-indent: 3rem;
   z-index: 10;
   position: relative;
 }
 
-.customer-reviews .review__text {
+.customer-reviews__section .review__text {
   font-size: 1.6rem;
   z-index: 10;
   position: relative;
 }
 
-.customer-reviews .review__name {
+.customer-reviews__section .review__name {
   font-size: 1.2rem;
   padding-top: .8rem;
   text-indent: 1.5rem;
 }
 
-.customer-reviews .review::before {
+.customer-reviews__section .review::before {
   content: "\201C";
   position: absolute;
   top: -1.9rem;
@@ -548,7 +533,7 @@ hr:before {
   z-index: 1;
 }
 
-.customer-reviews .review::after {
+.customer-reviews__section .review::after {
   content: "\201D";
   position: absolute;
   bottom: -11.4rem;
@@ -561,7 +546,23 @@ hr:before {
 }
 
 @media only screen and (max-width: 53em) {
-  .customer-reviews .review {
+  .customer-reviews__section .review {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.customer-reviews__picture {
+  max-width: 20%;
+  border-radius: 1.5rem;
+  display: inline-block;
+  margin: 2rem;
+  margin-left: 5rem;
+}
+
+@media only screen and (max-width: 53em) {
+  .customer-reviews__picture {
+    max-width: 40%;
     margin-right: auto;
     margin-left: auto;
   }
