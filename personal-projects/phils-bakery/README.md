@@ -1,21 +1,21 @@
-The Paradoxical Commandments
+Phil's Bakery
 ============================
 
 ## Project Description:
-I was once asked in an interview what article or book I've read that has had the most positive influence on me. At that time I drew a blank, but after the interview I remembered and regretted not saying The Paradoxical Commandments, as I always find myself coming back to it. I decided to make a web page for others to read it on. Enjoy.
+I made this web page to practice and demonstrate my new knowledge of advanced CSS, Sass with SCSS, and CSS Grid. 
 
 ## Dependencies:
 * Internet Browser.
 
 ## Opening The Webpage:
-1. Download the paradoxical-commandments folder.
-2. Unzip and open the folder.
-3. Double click the index.html file.
+1. Download the project.
+2. Double click the index.html file.
 
 ## File Manifest
 * index.html
-* style.css
-* jill-heyer-247995-unsplash.jpg
+* css folder
+* img folder
+* js folder
+* sass folder
 * README.md  
-
-### Background Photo by Jill Heyer on Unsplash       
+      
