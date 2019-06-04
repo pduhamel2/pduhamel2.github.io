@@ -2,7 +2,7 @@ Phil's Bakery
 ============================
 
 ## Project Description:
-I made this fictional web page to practice and demonstrate my new knowledge of advanced CSS, Sass with SCSS, and CSS Grid. 
+I made this fictional web page to practice and demonstrate my new knowledge of advanced CSS, Sass with SCSS, and CSS Grid. Created June 2019.
 
 ## Dependencies:
 * Internet Browser.

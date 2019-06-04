@@ -5,6 +5,12 @@ Personal Projects
 I created each of these projects to demonstrate knowledge of specific technologies.
 
 ## Projects Included:
+### Phil's Bakery
+* Advanced CSS
+* Sass with SCSS
+* HTML
+* jQuery
+
 ### pokemon-quiz
 * jQuery
 * Bootstrap 4
@@ -14,9 +20,6 @@ I created each of these projects to demonstrate knowledge of specific technologi
 
 ### paradoxical-commandments
 * HTML
-* CSS
-
-### css-zen-garden
 * CSS
 
 ### mern-dev-checklist
